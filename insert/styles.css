@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Aleo";
+  src: url(../assets/fonts/Aleo/Aleo-VariableFont_wght.ttf);
+}
+
+:root {
+  --primary-background-color: #bfd1ff;
+  --primary-darker-background-color: #a6b1e1;
+  --secondary-background-color: #d1f247;
+  --secondary-darker-background-color: #c2e812;
+  --background-color: white;
+  --surface-background-color: white;
+  --submit-button-background-color: black;
+
+  --primary-color: black;
+  --secondary-color: white;
+  --marked-text-color: #d1f247;
+
+  --error-color: #b00020;
+  --main-font-family: "Aleo";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-background-color);
+}
+
+header {
+  /* backdrop-filter: blur(10px); */
+  padding: 2rem 2rem;
+  /* border-radius: 2rem; */
+
+  /* background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); */
+  /* border: 1px solid rgba(255, 255, 255, 0.2);  */
+}
+
+footer {
+  padding: 4rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  background-color: var(--secondary-background-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+}
+
+nav ul li:hover {
+  background-color: var(--secondary-darker-background-color);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* padding: 2rem 2rem; */
+  font-family: var(--main-font-family);
+}
+
+.logo h3 a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.marked-text {
+  color: var(--marked-text-color);
+}
+
+.insert-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.insert-item-card {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 4rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.form input {
+  padding: 0.3rem 0.6rem;
+  font-family: var(--main-font-family);
+}
+
+.form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 0.6rem;
+  border-radius: 4px;
+  resize: none;
+  font-family: var(--main-font-family);
+}
+
+#submit-btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  align-self: center;
+  background-color: var(--submit-button-background-color);
+  color: var(--secondary-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  font-family: var(--main-font-family);
+}
+
+#submit-btn:hover {
+  background-color: var(--secondary-background-color);
+  color: var(--primary-color);
+}
+
+.success {
+  color: var(--secondary-darker-background-color);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.danger {
+  color: var(--error-color);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.all-items-link {
+  align-self: flex-start;
+}
+
+.all-items-link a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.all-items-link a img {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .insert-item-card {
+    width: 100%;
+  }
+}
